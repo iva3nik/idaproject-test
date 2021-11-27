@@ -3,9 +3,11 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 8px 0;
 }
 
 .header__title {
+  margin: 0;
   color: #3F3F3F;
   font-family: 'Source Sans Pro';
   font-style: normal;

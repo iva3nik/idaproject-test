@@ -5,7 +5,7 @@ import Menu from '../Menu/Menu';
 function Header() {
   return (
     <div className="header">
-      <div className="header__title">Добавление товара</div>
+      <h2 className="header__title">Добавление товара</h2>
       <Menu />
     </div>
   );
