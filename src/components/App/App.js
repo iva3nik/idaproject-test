@@ -1,9 +1,12 @@
 import './App.css';
+import Header from '../Header/Header';
 
 function App() {
   return (
-    <div className="App">
-      <h1 className="App__title">Добавление товара</h1>
+    <div className="page">
+      <div className="app">
+        <Header />
+      </div>
     </div>
   );
 }

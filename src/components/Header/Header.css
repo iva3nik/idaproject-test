@@ -1,0 +1,26 @@
+.header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__title {
+  color: #3F3F3F;
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 35px;
+}
+
+@media screen and (max-width: 499px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .header__title {
+    margin-bottom: 10px;
+  }
+}
