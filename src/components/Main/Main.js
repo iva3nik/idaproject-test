@@ -3,11 +3,11 @@ import './Main.css';
 import Form from "../Form/Form";
 import Gallery from "../Gallery/Gallery";
 
-function Main() {
+function Main({cards}) {
   return (
     <div className="main">
       <Form />
-      <Gallery />
+      <Gallery cards={cards} />
     </div>
   );
 };
