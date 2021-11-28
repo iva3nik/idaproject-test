@@ -3,6 +3,9 @@
   border-radius: 4px;
   box-shadow: 0px 20px 30px rgba(0, 0, 0, .04),
               0px 6px 10px rgba(0, 0, 0, .02) ;
+  position: sticky;
+  top: 24px;
+  float: right;
 }
 
 .form__content {
@@ -73,7 +76,7 @@
   color: black;
 }
 
-@media screen and (max-width: 363px) {
+@media screen and (max-width: 1109px) {
   .form {
     width: 288px;
   }
@@ -81,5 +84,11 @@
   .form__content {
     padding: 12px 0;
     width: 268px;
+  }
+}
+
+@media screen and (max-width: 669px) {
+  .form {
+    position: inherit;
   }
 }

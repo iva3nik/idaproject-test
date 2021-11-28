@@ -1,13 +1,13 @@
 import './App.css';
 import Header from '../Header/Header';
-import Form from '../Form/Form';
+import Main from '../Main/Main';
 
 function App() {
   return (
     <div className="page">
       <div className="app">
         <Header />
-        <Form />
+        <Main />
       </div>
     </div>
   );

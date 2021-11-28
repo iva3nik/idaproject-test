@@ -67,6 +67,13 @@
   border-radius: 10px;
   background-color: #FF8484;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, .1);
+  cursor: pointer;
+  opacity: 1;
+  transition: .3s linear;
+}
+
+.card__button-delete:hover {
+  opacity: .6;
 }
 
 .card__icon-delete {
@@ -74,16 +81,9 @@
   height: 16px;
   object-fit: cover;
   object-position: center;
-  cursor: pointer;
-  opacity: 1;
-  transition: .3s linear;
 }
 
-.card__icon-delete:hover {
-  opacity: .6;
-}
-
-@media screen and (max-width: 363px) {
+@media screen and (max-width: 1109px) {
   .card {
     width: 288px;
     height: 370px;
