@@ -2,9 +2,9 @@ import React from "react";
 import './Card.css';
 import bucket from "../../images/bucket.svg";
 
-function Card({ name, description, image, price }) {
+function Card({ name, description, image, price, id }) {
   return (
-    <div className="card">
+    <div className="card" id={id}>
       <img className="card__image" src={image} alt="Камера" />
       <div className="card__description">
         <div className="card__text">

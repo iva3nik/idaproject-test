@@ -6,13 +6,15 @@ function Gallery({cards}) {
   return (
     <div className="gallery">
       {
-        cards && cards.map(card => {
+        cards && cards.map((card, index) => {
           return (
             <Card
               name={card.name}
               description={card.description}
-              image={card.reference}
+              image={card.image}
               price={card.price}
+              key={index}
+              id={index}
             />
           )
         })

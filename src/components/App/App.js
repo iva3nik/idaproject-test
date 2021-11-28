@@ -1,17 +1,21 @@
+import React from 'react';
 import './App.css';
 import Header from '../Header/Header';
 import Main from '../Main/Main';
 import {defaultCard} from '../../utils/constants';
 
 function App() {
+  const [cards, setCards] = React.useState(defaultCard);
 
-  const cardsList = defaultCard;
+  function handleAddCard(data) {
+    setCards( [...cards, data] );
+  }
 
   return (
     <div className="page">
       <div className="app">
         <Header />
-        <Main cards={cardsList}/>
+        <Main cards={cards} handleAddCard={handleAddCard} />
       </div>
     </div>
   );
